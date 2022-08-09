@@ -1,0 +1,11 @@
+version: "2"
+
+services:
+  databse:
+    image: postgres:12
+    ports:
+      - 5432:5432
+    environment:
+      - POSTGRES_USER=actix-sqlx
+      - POSTGRES_DB=actix-sqlx
+      - POSTGRES_HOST_AUTH_METHOD=trust
